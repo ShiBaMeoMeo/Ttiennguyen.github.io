@@ -1,0 +1,30 @@
+ h1
+{
+    text-align: center;
+    align-items:absolute;
+    color:red;
+    font-size:50px;
+}
+
+legend
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+label
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
+pre
+{
+    text-align: center;
+    font-size: 20px;
+}
+

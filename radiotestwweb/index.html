@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <head >
+        <h1>Radio button and checkbox web</h1>
+    </head>
+
+    <nav>
+        <form>
+            <fieldset>
+              <legend>Please select your preferred contact method:</legend>
+              <div>
+                <p>
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
+                    <label for="contactChoice1">Email</label>
+                </p>
+                <p>
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                    <label for="contactChoice2">Phone</label>
+                </p>  
+                <p>
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                    <label for="contactChoice3">Mail</label>
+                </p>  
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </fieldset>
+          </form>
+          <pre id="log"></pre>
+
+          <script>
+            const form = document.querySelector("form");
+            const log = document.querySelector("#log");
+            form.addEventListener(
+                "submit",
+                (event) => {
+                    const data = new FormData(form);
+                    let output = "";
+                    for (const entry of data) {
+                    output = `${output}${entry[0]}=${entry[1]}\r`;
+                    }
+                    log.innerText = output;
+                    event.preventDefault();
+                },
+                false
+                );
+        </script>
+    </nav>
+
+    <nav>
+        <fieldset>
+            <legend>Input</legend>
+            <p>
+                <input id="choice1" name="Milk" value="Milk"  type="checkbox" >
+                <label>Milk</label>
+            </p>
+            <p>
+                <input id="choice2" name="coke" value="coke"  type="checkbox">
+                <label>Coke</label>
+            </p>
+            <p>
+                <input id="choice3" name="7up" value="7up"  type="checkbox">
+                <label>7up</label>
+            </p>
+        </fieldset>
+    </nav>  
+
+</body>
+</html>
