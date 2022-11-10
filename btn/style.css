@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: royalblue;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 70px 30px;
+    margin-left:240px ;
+}
+.btn:hover {
+    background: #eee;}
+
+.contact {
+    color:green;
+}
+.phone {
+    color: pink;
+}
+.mail{
+    color : blue;
+}
+
+.id-contact {
+    color: green;
+}
+
+.id-phone {
+    color: pink;
+}
+
+.id-mail {
+    color: blue;
+}
+
+.navb button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    font-size:24px;
+    padding:24px 14px;
+    border-radius:10%;
+    display: inline-block;
+    margin-left:590px;
+}
+.navb button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+    

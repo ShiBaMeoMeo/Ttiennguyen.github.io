@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>button test web</title>
+</head>
+<body>
+    <header>
+        <h1 class="page-header"> This page test button </h1>
+    </header>
+
+    <nav class="nava">
+        <button onclick="myContact()" type="button" class="btn contact" value="contact">Contact</button>
+        <button onclick="myPhone()" type="button" class="btn phone" value="phone">Phone</button>
+        <button onclick="myEmail()" type="button" class="btn email" value="mail">Mail</button>
+            <p class="id-contact" id ="contact"></p>
+            <p class="id-phone" id ="phone"></p>
+            <p class="id-mail" id ="mail"></p>
+        <script>
+            function myContact(){
+                    document.getElementById("contact").innerHTML = "FaceBook";      
+            }
+            function myPhone(){
+                document.getElementById("phone").innerHTML = "09xxxxxxxx";
+            }
+            function myEmail(){
+                document.getElementById("mail").innerHTML = "Meunguyen@gmail.com";
+            }
+        </script>
+    </nav>
+
+    <nav class="navb">
+        <a href="https://www.facebook.com/nguyentran.tien.33"><button id ="linkmyfacebook" class="myFace">Link my Facebook</button></a>
+    </nav>
+</body>
+</html>
